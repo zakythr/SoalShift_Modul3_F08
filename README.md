@@ -10,6 +10,51 @@ Contoh:
 
 <h3>Jawaban :</h3>
 
+```
+void *proses(void *args)
+{
+	unsigned long long faktor=1;
+	struct Faktorial*extract=(struct Faktorial*)args;	//mengubah nilai array menjadi variabel dan nilainya 
+	for(int a=1; a<=extract->nilai; ++a)
+	{
+		faktor=a*faktor;	//pengkalian faktorial
+	}
+	printf("%d! = %llu \n", extract->nilai, faktor);
+}
+```
+- Langkah awal membuat fungsi void untuk proses menghitung faktorialnya
+
+```
+do
+	{
+		scanf("%d%c", &array[a], &space);
+		a++;
+	}while(space != '\n');
+```
+- Langkah kedua kita membuat mainnya, dengan awalnya kita masukkan nilai yang mau kita faktorialkan saat tidak mengandung enter atau "\n" maka lanjut proses bawahnya
+
+```
+if(array[a] > array[b])
+			{
+				x=array[a];
+				array[a]=array[b];
+				array[b]=x;
+			}
+```
+- Langkah ketiga, pada mainnya kita beri program untuk mengurutkan nilai yang mau difaktorialkan
+
+```
+while(array[a]!='\0')			//untuk mengfaktorialkan
+	{
+		dipanggil.nilai=array[a];
+		urut=array[a];
+		pthread_create(&tid[urut], NULL, &proses, (void *)&dipanggil);
+		pthread_join(tid[urut], NULL);
+		a++;
+	}
+```
+- Langkah terakhir, saat array tidak mengandung nilai kosong maka menjalakan proses faktorial untuk setiap nilai
+
 2. Pada suatu hari ada orang yang ingin berjualan 1 jenis barang secara private, dia memintamu membuat program C dengan spesifikasi sebagai berikut:
 - Terdapat 2 server: server penjual dan server pembeli
 - 1 server hanya bisa terkoneksi dengan 1 client
