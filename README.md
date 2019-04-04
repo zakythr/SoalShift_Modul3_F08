@@ -33,6 +33,7 @@ a)  Terdapat 2 karakter Agmal dan Iraj
 b)  Kedua karakter memiliki status yang unik
 
 ()  Agmal mempunyai WakeUp_Status, di awal program memiliki status 0
+
 ()  Iraj memiliki Spirit_Status, di awal program memiliki status 100
 
 ()  Terdapat 3 Fitur utama
