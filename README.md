@@ -88,8 +88,5 @@ f)	Fitur shop, pemain dapat membeli makanan sepuas-puasnya selama stok di toko m
 ()  Penjual (terpisah)
 -	Bisa mengecek stok makanan yang ada di toko
 -	Penjual dapat menambah stok makanan.
-	
-Spesifikasi program:
-Program mampu mendeteksi input berupa key press. (Program bisa berjalan tanpa perlu menekan tombol enter)
-Program terdiri dari 3 scene yaitu standby, battle, dan shop.
-Pada saat berada di standby scene, program selalu menampilkan health status, hunger status, hygiene status, stok makanan tersisa, dan juga status kamar mandi (“Bath is ready” jika bisa digunakan, “Bath will be ready in [bath 
+
+<h3>Jawaban:</h3>
