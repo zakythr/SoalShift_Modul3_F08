@@ -3,12 +3,12 @@ Semoga ilmunya berkah dan berhasil mengerjakan soal praktikum Sistem Operasi sam
 
 1. Buatlah program C yang bisa menghitung faktorial secara parallel lalu menampilkan hasilnya secara berurutan
 Contoh:
-	./faktorial 5 3 4
-	3! = 6
-	4! = 24
-	5! = 120
+-  ./faktorial 5 3 4
+-  3! = 6
+-  4! = 24
+-  5! = 120
 
-<h3>Jawaban:</h3>
+<h3>Jawaban :</h3>
 
 Pada suatu hari ada orang yang ingin berjualan 1 jenis barang secara private, dia memintamu membuat program C dengan spesifikasi sebagai berikut:
 Terdapat 2 server: server penjual dan server pembeli
