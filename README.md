@@ -24,7 +24,7 @@ Contoh:
 - Server penjual akan mencetak stok saat ini setiap 5 detik sekali
 - Menggunakan thread, socket, shared memory
 
-<h3>Jawaban:</h3>
+<h3>Jawaban :</h3>
 	
 3. Agmal dan Iraj merupakan 2 sahabat yang sedang kuliah dan hidup satu kostan, sayangnya mereka mempunyai gaya hidup yang berkebalikan, dimana Iraj merupakan laki-laki yang sangat sehat,rajin berolahraga dan bangun tidak pernah kesiangan sedangkan Agmal hampir menghabiskan setengah umur hidupnya hanya untuk tidur dan ‘ngoding’. Dikarenakan mereka sahabat yang baik, Agmal dan iraj sama-sama ingin membuat satu sama lain mengikuti gaya hidup mereka dengan cara membuat Iraj sering tidur seperti Agmal, atau membuat Agmal selalu bangun pagi seperti Iraj. Buatlah suatu program C untuk menggambarkan kehidupan mereka dengan spesifikasi sebagai berikut:
 
@@ -53,7 +53,7 @@ b)  Kedua karakter memiliki status yang unik
 
 -	Syarat Menggunakan Lebih dari 1 Thread
 
-<h3>Jawaban:</h3>
+<h3>Jawaban :</h3>
 
 4. Buatlah sebuah program C dimana dapat menyimpan list proses yang sedang berjalan (ps -aux) maksimal 10 list proses. Dimana awalnya list proses disimpan dalam di 2 file ekstensi .txt yaitu  SimpanProses1.txt di direktori /home/Document/FolderProses1 dan SimpanProses2.txt di direktori /home/Document/FolderProses2 , setelah itu masing2 file di  kompres zip dengan format nama file KompresProses1.zip dan KompresProses2.zip dan file SimpanProses1.txt dan SimpanProses2.txt akan otomatis terhapus, setelah itu program akan menunggu selama 15 detik lalu program akan mengekstrak kembali file KompresProses1.zip dan KompresProses2.zip 
 Dengan Syarat : 
@@ -64,7 +64,7 @@ Dengan Syarat :
 - Wajib Menggunakan Multithreading
 - Boleh menggunakan system
 
-<h3>Jawaban:</h3>
+<h3>Jawaban :</h3>
 
 5. Angga, adik Jiwang akan berulang tahun yang ke sembilan pada tanggal 6 April besok. Karena lupa menabung, Jiwang tidak mempunyai uang sepeserpun untuk membelikan Angga kado. Kamu sebagai sahabat Jiwang ingin membantu Jiwang membahagiakan adiknya sehingga kamu menawarkan bantuan membuatkan permainan komputer sederhana menggunakan program C. Jiwang sangat menyukai idemu tersebut. Berikut permainan yang Jiwang minta.
 
@@ -89,4 +89,4 @@ f)	Fitur shop, pemain dapat membeli makanan sepuas-puasnya selama stok di toko m
 -	Bisa mengecek stok makanan yang ada di toko
 -	Penjual dapat menambah stok makanan.
 
-<h3>Jawaban:</h3>
+<h3>Jawaban :</h3>
