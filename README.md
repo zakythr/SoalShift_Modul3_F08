@@ -34,15 +34,18 @@ b)  Kedua karakter memiliki status yang unik
 
 - Agmal mempunyai WakeUp_Status, di awal program memiliki status 0
 - Iraj memiliki Spirit_Status, di awal program memiliki status 100
+
 - Terdapat 3 Fitur utama
 -	All Status, yaitu menampilkan status kedua sahabat
 -	Ex: Agmal WakeUp_Status = 75 
       	Iraj Spirit_Status = 30
 -	“Agmal Ayo Bangun” menambah WakeUp_Status Agmal sebesar 15 point
 -	“Iraj Ayo Tidur” mengurangi Spirit_Status Iraj sebanyak 20 point
+
 - Terdapat Kasus yang unik dimana:
 -	Jika Fitur “Agmal Ayo Bangun” dijalankan sebanyak 3 kali, maka Fitur “Iraj Ayo Tidur” Tidak bisa dijalankan selama 10 detik (Dengan mengirim pesan ke sistem “Fitur Iraj Ayo Tidur disabled 10 s”)
 -	Jika Fitur  “Iraj Ayo Tidur” dijalankan sebanyak 3 kali, maka Fitur “Agmal Ayo Bangun” Tidak bisa dijalankan selama 10 detik (Dengan mengirim pesan ke sistem “Agmal Ayo Bangun disabled 10 s”)
+
 - Program akan berhenti jika Salah Satu :
 -	WakeUp_Status Agmal >= 100 (Tampilkan Pesan “Agmal Terbangun,mereka bangun pagi dan berolahraga”)
 -	Spirit_Status Iraj <= 0 (Tampilkan Pesan “Iraj ikut tidur, dan bangun kesiangan bersama Agmal”)
