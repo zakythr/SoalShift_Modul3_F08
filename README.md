@@ -101,7 +101,63 @@ b)  Kedua karakter memiliki status yang unik
 <h3>Jawaban :</h3>
 
 ```
+if(hitungsleep==3){
+		sleep(10);
+		tanda=0;
+		hitungsleep=0;
+		printf("Wes Tangi\n");
+	  }
 ```
+- Pertama kita membuat fungsi untuk Agmal, yang isinya pertama untuk nge-sleep selama 10 detik
+
+```
+ else{
+		if(tanda==1){
+			hitungbangun++;
+			bangun+=15;
+```
+- Kedua, menambahkan nilai 15 setiap memanggil "Agmal Ayo Bangun"
+
+```
+if(hitungbangun==3){
+				printf("Fitur Iraj Tidur disabled 10 s\n");
+		}
+```
+- Ketiga, jika sudah dijalankan selama 3 kali maka print "Fitur Iraj Tidur disabled 10 s"
+
+- Langkah diatas dilakukan juga pada fungsi status_iraj
+
+```
+	memset(pesan,0,30);
+	gets(pesan);
+		
+	fitur_agmal=strcmp(pesan, "Agmal Ayo Bangun");
+	fitur_iraj=strcmp(pesan, "Iraj Ayo Tidur");
+	fitur_allstatus=strcmp(pesan, "All Status");
+```
+- Pada fungsi mainnya pertama kita masukkan kalimat dengan syntax "gets", lalu bandingkan kalimat yang kita masukkan dengan kalimat yang disyaratkan dengan "strcmp"
+
+```
+if(fitur_allstatus==0){
+			printf("Agmal->WakeUp_Status = %d\n", bangun);
+			printf("Iraj->Spirit_Status = %d\n", ayo_semangat);
+		}
+```
+- Kondisi dimana all status dikerjakan
+
+```
+if(fitur_agmal==0){
+			tanda=1;
+	}
+```
+- Kondisi dimana fitur_agmal dijalankan
+
+```
+if(fitur_iraj==0){
+			tandai=1;
+		}
+```
+- Kondisi dimana fitur_iraj dijalankan
 
 4. Buatlah sebuah program C dimana dapat menyimpan list proses yang sedang berjalan (ps -aux) maksimal 10 list proses. Dimana awalnya list proses disimpan dalam di 2 file ekstensi .txt yaitu  SimpanProses1.txt di direktori /home/Document/FolderProses1 dan SimpanProses2.txt di direktori /home/Document/FolderProses2 , setelah itu masing2 file di  kompres zip dengan format nama file KompresProses1.zip dan KompresProses2.zip dan file SimpanProses1.txt dan SimpanProses2.txt akan otomatis terhapus, setelah itu program akan menunggu selama 15 detik lalu program akan mengekstrak kembali file KompresProses1.zip dan KompresProses2.zip 
 Dengan Syarat : 
