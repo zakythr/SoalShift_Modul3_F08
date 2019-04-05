@@ -170,6 +170,29 @@ Dengan Syarat :
 
 <h3>Jawaban :</h3>
 
+```
+//buat folder FolderProses
+    sprintf(arr,"mkdir ~/SoalShift_modul3_F08/soal4/FolderProses%d",extract->proses);
+    system(arr);
+```
+- Pertama kita membuat fungsi zip, dengan langkah pertama membuat folder "FolderProses" yang ditaruh di Documents
+```
+//untuk pengambilan isi aux dan disimpan di SimpanProses*.txt yg berada di folder FolderProses
+    strcpy(arr,"");
+    sprintf(arr,"ps aux --no-heading | head -%d  | tail -%d > ~/SoalShift_modul3_F08/soal4/FolderProses%d/SimpanProses%d.txt",extract->max,extract->min,extract->proses,extract->proses);
+```
+- Kedua kita mengambil isi dari aux-ps maksimal 10 row dan disimpan di SimpanProses.txt yang berada di FolderProses
+
+```
+sprintf(arr,"zip -qmj ~/SoalShift_modul3_F08/soal4/FolderProses%d/KompresProses%d ~/SoalShift_modul3_F08/soal4/FolderProses%d/SimpanProses%d.txt",extract->proses,extract->proses,extract->proses,extract->proses);
+```
+- Langkah ketiga kita mengzip FolderProses
+
+```
+sprintf(arr,"unzip -qd ~/SoalShift_modul3_F08/soal4/FolderProses%d ~/SoalShift_modul3_F08/soal4/FolderProses%d/KompresProses%d.zip",extract->proses,extract->proses,extract->proses);
+```
+- Selanjutnya kita membuat fungsi unzip untuk proses unzipnya
+
 5. Angga, adik Jiwang akan berulang tahun yang ke sembilan pada tanggal 6 April besok. Karena lupa menabung, Jiwang tidak mempunyai uang sepeserpun untuk membelikan Angga kado. Kamu sebagai sahabat Jiwang ingin membantu Jiwang membahagiakan adiknya sehingga kamu menawarkan bantuan membuatkan permainan komputer sederhana menggunakan program C. Jiwang sangat menyukai idemu tersebut. Berikut permainan yang Jiwang minta.
 
 a)	Pemain memelihara seekor monster lucu dalam permainan. Pemain dapat  memberi nama pada monsternya.
