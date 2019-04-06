@@ -25,13 +25,11 @@ void *proses(void *args)
 - Langkah awal membuat fungsi void untuk proses menghitung faktorialnya
 
 ```
-do
-	{
-		scanf("%d%c", &array[a], &space);
-		a++;
-	}while(space != '\n');
+for(int i=1;i<argc;i++){
+             array[i-1]=atoi(argv[i]);
+        }
 ```
-- Langkah kedua kita membuat mainnya, dengan awalnya kita masukkan nilai yang mau kita faktorialkan saat tidak mengandung enter atau "\n" maka lanjut proses bawahnya
+- Langkah kedua kita membuat mainnya, dengan pertama kita menggunakan 'atoi' untuk membaca input yang nilai inputnya ditaruh disamping nama file compilenya "./soal1 12 5 4 6"
 
 ```
 if(array[a] > array[b])
