@@ -68,6 +68,73 @@ while(array[a]!='\0')			//untuk mengfaktorialkan
 - Menggunakan thread, socket, shared memory
 
 <h3>Jawaban :</h3>
+- Langkah pertama kita membuat client pemblinya terlebih dahulu, definisi dibawah ini ;
+```
+        if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
+        {
+            printf("\n Socket creation error \n");
+            return -1;
+        }
+```
+- Membuat endpoint untuk komunikasi, ipv4 return filedescriptor > 0 jika sukses
+
+```
+        if(inet_pton(AF_INET, "192.168.56.1", &serv_address.sin_addr)<=0)
+        {
+            printf("\nInvalid address/ Address not supported \n");
+            return -1;
+        }
+```
+- Konversi dari string ke binary form dari src 192 sekian ke dst serv_address.sin_addr
+- Return <= 0 jk gagal, 1 jk berhasil
+
+```
+        if (connect(sock, (struct sockaddr *)&serv_address, sizeof(serv_address)) < 0)
+        {
+            printf("\nConnection Failed \n");
+            return -1;
+        }
+```
+- Membuat koneksi socket di kiri ke address di kanan, return < 0 jika gagal, 0 jika berhasil
+
+- Setelah selesai membuat client pembeli, selanjutnya mebuat client penjual. Lakukan hal yang sama pada client penjual dengan memodifikasikan/memberikan sedikit perubahan pada kodingannya
+
+- Langkah selanjutnya membuat server pembeli
+
+```
+    if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0)
+    {   //jika return 0 maka ada yg salah
+        perror("socket failed");
+        exit(EXIT_FAILURE);
+    }
+```
+- membuat endpoint untuk komunikasi, ipv4 return filedescriptor > 0 jika sukses
+
+```
+        if (listen(server_fd, 3) < 0)
+        {
+            perror("listen");
+            exit(EXIT_FAILURE);
+        }
+```
+- untuk mendengarkan koneksi pada socket, dengan max length queue pending connection 3, return <0 jika gagal
+
+```
+        if ((new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&addrlen))<0)
+        {
+            perror("accept");
+            exit(EXIT_FAILURE);
+        }
+```
+- Menerima koneksi dari socket, return <0 jika gagal
+
+```
+    shmdt(value);
+    shmctl(shmid, IPC_RMID, NULL);
+```
+- Detach memory dan destroy
+
+- Lalu kita membuat server penjualnya, dalam hal ini pada server penjual hampir semua fungsinya sama seperti pada server pembeli, perbedaannya terletak pada fungsi mainnya 
 	
 3. Agmal dan Iraj merupakan 2 sahabat yang sedang kuliah dan hidup satu kostan, sayangnya mereka mempunyai gaya hidup yang berkebalikan, dimana Iraj merupakan laki-laki yang sangat sehat,rajin berolahraga dan bangun tidak pernah kesiangan sedangkan Agmal hampir menghabiskan setengah umur hidupnya hanya untuk tidur dan ‘ngoding’. Dikarenakan mereka sahabat yang baik, Agmal dan iraj sama-sama ingin membuat satu sama lain mengikuti gaya hidup mereka dengan cara membuat Iraj sering tidur seperti Agmal, atau membuat Agmal selalu bangun pagi seperti Iraj. Buatlah suatu program C untuk menggambarkan kehidupan mereka dengan spesifikasi sebagai berikut:
 
